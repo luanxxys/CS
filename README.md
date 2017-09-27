@@ -1,5 +1,5 @@
 # CS
 
-There will be contents about compute science.
+There will be contents about computer science.
 
 To be continue...
