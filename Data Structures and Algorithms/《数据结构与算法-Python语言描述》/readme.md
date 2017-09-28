@@ -11,7 +11,7 @@
 
     _数据结构_
 
-    ![data structure](../image/"data structure.png")
+    ![data structure](../image/data_structure.png)
 
     _Python_
 
