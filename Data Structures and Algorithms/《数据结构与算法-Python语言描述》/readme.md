@@ -7,17 +7,17 @@
 
     ![算法](../image/算法.png)
 
-- ### 抽象数据类型和 Python 类
+1. ### 抽象数据类型和 Python 类
 
     _数据结构_
 
-    ![data structure](../image/data structure.png)
+    ![data structure](../image/"data structure.png")
 
     _Python_
 
     ![Python](../image/Python.png)
 
-- ### 线性表
+1. ### 线性表
 
     + lst.reserve()
 
