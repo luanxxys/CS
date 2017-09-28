@@ -10,8 +10,9 @@
 还可以读读下面这个。
 
 [机器学习实践指南](https://github.com/luanxxys/cs/blob/master/Machine%20Learning/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.docx)
+> 链接打开后，点击 View Raw 下载这个 word 文档
 
 [2017校招面经（BAT、搜狗、搜狐、一点资讯、360、华为优招）](http://blog.csdn.net/a819825294/article/details/52814653)
 > 从上文里大致能从中清楚些机器学习发展的方向。
 > 
-> 这个学长很牛，里面也有关于 python 的博客。
+> 室友实验室的这个学长很牛，里面也有关于 python 的博客。
