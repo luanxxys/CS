@@ -19,7 +19,7 @@
 
 1. ### 线性表
 
-    ![线性表](../image/线性表.png)
+    ![list](../image/线性表.png)
 
     - 顺序表
 
@@ -122,3 +122,129 @@
                 p.next = None
                 return e
             ```
+
+    - 汇集对象-生成器
+
+        ![汇集对象-生成器](/image/汇集对象-生成器.xmind)
+
+        + LList 类定义对象的一个迭代器
+
+            ``` Python
+            def elements(self):
+                p = self._head
+                while p is not None:
+                    yield p.elem
+                    p = p.next
+            ```
+
+            有了这个方法，代码中可以写
+
+            ``` Python
+            for x in llist1.elements()
+                print(x)
+            ```
+
+    - 循环单链表
+
+        ``` python
+        class LCList:   # 循环单链表类
+            def __init__(self):
+                self._rear = None
+
+            def is_impety(self):
+                return self._rear is None
+
+            def prepend(self, elem)   # 前端插入
+                p = LNode(elem)
+                if self._rear is None:
+                    p.next = p   # 建立一个节点的环
+                    self._rear = p
+                else:
+                    p.next = self._rear.next
+                    self>_rear = p
+
+            def apppend(self, elem):   # 尾端插入
+                self.prepend(elem)
+                self._rear = self._rear.next
+
+            def pop(self):   # 尾端弹出
+                if self._rear is None:
+                    raise LinkedListUnderflow("in pop of CLList")
+                p = self._rear.next
+                if self._rear is p:
+                    self._rear = None
+                else:
+                    self._rear.next = p.next
+                return p.elem
+
+            def printall(self):   # 输出表元素
+                if self.is_impety():
+                    return
+                p = self._rear.next
+                while true:
+                    print(p.elem)
+                    if p is self._rear:
+                        break
+                    p = p.next
+        ```
+
+    - 双链表
+
+        ``` pyhton
+        # 删除结点
+        p.pre.next = p.next
+        p.next.pre = p.pre
+        ```
+
+    - Josephus 问题
+        > n 个人围坐，从第 k 个人报数，报数到第 k 个人出局
+    
+        基于循环单链表的解
+
+        ``` python
+        class Josephus(LCList):
+            def turn(self, m):
+                for i in range(m):
+                    self._rear = self._rear.next
+
+            def __init__(self, n, k, m):
+                LCList.__init__(self)
+                for i in range(n):
+                    self.append(i+1)
+                self.turn(k-1)
+                while not self.is_impety():
+                    self.turn(m-1)
+                    print(self.pop(),
+                            end=("\n" if self.is_impety() else ", "))
+        ```
+
+1. ### 字符串
+
+    ![string](../image/字符串.png)
+
+    - 朴素的串匹配算法
+
+        ``` python
+        def naive_matching(t, p):
+            m, n = len(p), len(t)
+            i, j = 0, 0
+            while i < m and j < n:      # i==m 说明找到匹配
+                if p[i] == t[j]:        # 字符相同，考虑下一对字符
+                    i, j = i+1, j+1
+                else:                   # 字符不同，考虑 t 中下一位置
+                    i, j = 0, j-i+1
+                if i == m:              # 找到匹配，返回其开始下标
+                    return j - i
+                return -1               # 无匹配，返回特殊值
+        ```
+
+
+
+
+
+
+
+
+
+
+    
