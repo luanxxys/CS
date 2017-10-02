@@ -238,9 +238,55 @@
                 return -1               # 无匹配，返回特殊值
         ```
 
+        复杂度分析： O(n*m)
 
+    - KMP 匹配函数
 
+        ``` python
+        def matching_KMP(t, p, pnext):
+            """""" KMP 串匹配，主函数 """"""
+            j, i = 0, 0
+            n, m = len(t), len(p)
+            while j < n and i < m:              # i==m 说明找到了匹配
+                if i == -1 or t[j] == p[i]:     # 考虑 p 中下一字符
+                    j, i - j+1, i+1
+                else:                           # 失败，考虑 pnext 决定的下一字符
+                    i = pnext[i]
+                if i == m:                      # 找到匹配，放回其下标
+                    return j-i
+                return -1                       # 无匹配，返回特殊值
+        ```
 
+        复杂度分析： O(n)，n 为目标串长度
+
+        pnext 表的构造算法
+
+        ``` python
+        def gen_pnext(p):
+            """生成针对 p 中各位置 i 的下一个检查位置表，用于 KMP 算法"""
+            i, k, m = 0, -1, len(p)
+            pnext = [-1] * m                    # 初始数组元素全为 -1
+            while i < m-1:                      # 生成下一个 pnext 元素值
+                if k == -1 or p[i] == p[k]:
+                    i, k = i+1, k+1
+                    if p[i] == p[k]:
+                        pnext[i] = pnext[j]     # 设置 pnext 元素
+                else:
+                    pnext[i] = k                # 退到更短相同前缀
+            return pnext
+        ```
+
+        复杂度分析： O(m)，m 为模式串长度
+
+        KMP 算法时间复杂度：O(n+m)，多数情况下 m << n 
+
+        故，O(n+m) ==> O(n)
+
+        优于朴素算法的 O(n*m)
+
+    - 正则表达式 Regular Expression
+
+        ![正则表达式](../image/正则表达式.png)
 
 
 
