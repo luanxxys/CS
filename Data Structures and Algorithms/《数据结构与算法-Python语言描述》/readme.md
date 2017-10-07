@@ -151,7 +151,7 @@
             def __init__(self):
                 self._rear = None
 
-            def is_impety(self):
+            def is_empety(self):
                 return self._rear is None
 
             def prepend(self, elem)   # 前端插入
@@ -178,7 +178,7 @@
                 return p.elem
 
             def printall(self):   # 输出表元素
-                if self.is_impety():
+                if self.is_empety():
                     return
                 p = self._rear.next
                 while true:
@@ -212,10 +212,10 @@
                 for i in range(n):
                     self.append(i+1)
                 self.turn(k-1)
-                while not self.is_impety():
+                while not self.is_empety():
                     self.turn(m-1)
                     print(self.pop(),
-                            end=("\n" if self.is_impety() else ", "))
+                            end=("\n" if self.is_empety() else ", "))
         ```
 
 1. ### 字符串
@@ -249,7 +249,7 @@
             n, m = len(t), len(p)
             while j < n and i < m:              # i==m 说明找到了匹配
                 if i == -1 or t[j] == p[i]:     # 考虑 p 中下一字符
-                    j, i - j+1, i+1
+                    j, i = j+1, i+1
                 else:                           # 失败，考虑 pnext 决定的下一字符
                     i = pnext[i]
                 if i == m:                      # 找到匹配，放回其下标
@@ -288,9 +288,202 @@
 
         ![正则表达式](../image/正则表达式.png)
 
+1. ### 栈和队列
+
+    ![栈和队列](../image/栈和队列.png)
+
+    - 栈e
+
+    - 队列类的实现
+
+        ``` python
+        class SQueue():e
+        ```
+
+1. ### 二叉树和树
+
+    ![二叉树和树](../image/二叉树和树.png)
+
+    - 基于堆的优先队列类
+
+        ``` python
+        class PrioQuue:
+            ``` Implementing priority queues using heaps
+            ```
+            def __init__(self, elist=[]):
+                self._elems = list(elist)
+                if elist:
+                    sekf.buildheap()
+
+                def is_empty(self):
+                    return not self._elems
+                def peek(self):
+                    if self.is_empety():
+                        raise PrioQueueError("in peek")
+                    return self._elems[0]
+        ```
+
+    - 二叉树的类实现
+
+        二叉树结点类
+
+        ``` pyhton
+        class BinTNode:
+            def __init__(self, dat, left=None, right=None):
+                self.data = dat
+                self.left = left
+                self.right = right
+        ```
+
+        构造包含三个结点的二叉树，变量 t 引着树根结点
+        > 具有递归的结构，容易采用递归方式处理
+
+            t = BinTNode(1, BinTNode(2), BinTNode(3))
+
+        ``` pyhton
+        # 统计树中结点的个数
+        def count_BinTNodes(t):
+            if t is None:
+                return 0
+            else:
+                return 1 + count_BinTNodes(t.left) \
+                       + count_BinTNodes(t.right)
+
+        # 假设结点中保存数值，求这种二叉树里的所有数值和：
+        def sum_BinTNodes(t):
+            if t is None:
+                return 0
+            else:
+                return dat + sum_BinTNodes(t.left) \
+                       + sum_BinTNodes(t.right)
+        ```
+
+    - 二叉树遍历
+
+        + 深度优先方式-递归
+
+            ``` pyhton
+            # 先根序遍历
+            def preorder(t, proc):  # proc 是具体的节点数据的操作
+                if t is None:
+                    return
+                proc(t.data)
+                preoder(l.left)
+                preoder(l.right)
+            ```
+
+            输出二叉树
+
+            ``` pyhton
+            def print_BinTNodes(t):
+                if t is None:
+                    print("^", end="")              # 空树输出 ^
+                    return
+                print("(" + STR(t.data), end="")
+                print_BinTNodes(l.left)
+                print_BinTNodes(l.right)
+                print(")", end="")
+            ```
+
+        + 宽度优先遍历
+
+            队列实现
+
+        + 通过生成器函数遍历
+
+1. ### 图
+
+    ![图.png](../image/图.png)
+
+    - 邻接矩阵的实现
+
+        ``` python
+        class Graph:                            # 基本图类，采用邻接矩阵表示
+            def __init__(self, mat, unconn=0):
+                vnum = len(mat)
+                for x in max:
+                    if len(x) != vnum:          # 检查是否为方阵
+                        raise ValueError("Argument for 'Graph'.")
+                    self._mat = [mat[i][:] for i in range(vnum)]    # 做拷贝
+                    self._unconn = unconn
+                    self._vnum = vnum
+
+                def vertex_num(self):
+                    return self._vnum
+
+                def _invalid(self, v):
+                    return 0 > v or v >= self._vnum
+
+                def add_vertex(self):
+                    raise GraphError(
+                        "Adj-Matrix does not support 'add_vertex'")
+
+                def add_edge(self, vi, vj, val=1):
+                    if self._invalid(vi) or self._invalid(vj):
+                        raise GraphError(str(vi) + 'or' +str(vj) +
+                                        "is not a valid vertex")
+                    return self._mat[vi][vj]
+        ```
+
+    - 深度优先遍历的非递归算法
+
+        ``` pyhton
+        def DFS_graph(graph, v0):
+            vnum = graph.vertex_num()
+            visited = [0]*vnum                  # visited 记录已访问顶点
+            visited[v0] = 1
+            DFS_seq = [v0]                      # DFS_seq 记录遍历序列
+            st = SStack()
+            st.push((0, graph.out_edges(v0)))   # 入栈(i, edges)，说明
+            while not st.is_empety():           # 下次应访问边 edges[i]
+                i, edges = st.pop()
+                if i < len(edges):
+                    v, e = edges[i]
+                    st.push((i+1, edges))       # 下次回来将访问 edges[i]
+                    if not visited[v]:          # v 未访问，访问并记录其可达顶点
+                        DFS_seq.append(v)
+                        visited[v] = 1
+                        st.push((0, graph.out_edges(v)))
+                        # 下面访问的边组
+            return DFS_seq
+        ```
+
+    - 最小生成树
+
+        Kruskal 算法
+
+            T = (v, {})
+            while T中所含边数小于n-1：
+                从E中选取当前最小边(u,v)，将它们从E中删除
+                if (u,v)两端点属于T的不同连通分量：
+                    将边(u,v)加入T
+
+1. ### 字典和集合
+
+    ![字典和集合](../image/字典和集合.png)
+
+    - 在元素有序的表上做二分法检索
+
+        ``` pyhton
+        def bisearch(lst, key):
+            low, high = 0, len(lst)-1
+            while low <= high:                  # 范围内还有元素
+                mid = low + (high-low)//2
+                if key == lst[mid].key:
+                    return lst[mid].value
+                if key < lst[mid].key:
+                    high = mid - 1              # 在低半区继续
+                else:
+                    low = mid + 1               # 在高半区继续
+        ```
+
+        复杂度分析：O(log n)
+
+1. ### 排序
+
+    ![排序](../image/排序.png)
 
 
 
 
 
-    
