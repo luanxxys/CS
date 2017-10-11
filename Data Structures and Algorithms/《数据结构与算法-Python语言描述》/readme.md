@@ -140,7 +140,7 @@
             有了这个方法，代码中可以写
 
             ``` Python
-            for x in llist1.elements()
+            for x in llist1.elements():
                 print(x)
             ```
 
@@ -154,7 +154,7 @@
             def is_empety(self):
                 return self._rear is None
 
-            def prepend(self, elem)   # 前端插入
+            def prepend(self, elem):   # 前端插入
                 p = LNode(elem)
                 if self._rear is None:
                     p.next = p   # 建立一个节点的环
@@ -190,7 +190,7 @@
 
     - 双链表
 
-        ``` pyhton
+        ``` python
         # 删除结点
         p.pre.next = p.next
         p.next.pre = p.pre
@@ -292,12 +292,12 @@
 
     ![栈和队列](../image/栈和队列.png)
 
-    - 栈e
+    - 栈
 
     - 队列类的实现
 
         ``` python
-        class SQueue():e
+        class SQueue():
         ```
 
 1. ### 二叉树和树
@@ -307,13 +307,13 @@
     - 基于堆的优先队列类
 
         ``` python
-        class PrioQuue:
+        class PrioQueue:
             ``` Implementing priority queues using heaps
             ```
             def __init__(self, elist=[]):
                 self._elems = list(elist)
                 if elist:
-                    sekf.buildheap()
+                    self.buildheap()
 
                 def is_empty(self):
                     return not self._elems
@@ -327,7 +327,7 @@
 
         二叉树结点类
 
-        ``` pyhton
+        ``` python
         class BinTNode:
             def __init__(self, dat, left=None, right=None):
                 self.data = dat
@@ -340,7 +340,7 @@
 
             t = BinTNode(1, BinTNode(2), BinTNode(3))
 
-        ``` pyhton
+        ``` python
         # 统计树中结点的个数
         def count_BinTNodes(t):
             if t is None:
@@ -362,7 +362,7 @@
 
         + 深度优先方式-递归
 
-            ``` pyhton
+            ``` python
             # 先根序遍历
             def preorder(t, proc):  # proc 是具体的节点数据的操作
                 if t is None:
@@ -374,7 +374,7 @@
 
             输出二叉树
 
-            ``` pyhton
+            ``` python
             def print_BinTNodes(t):
                 if t is None:
                     print("^", end="")              # 空树输出 ^
@@ -427,7 +427,7 @@
 
     - 深度优先遍历的非递归算法
 
-        ``` pyhton
+        ``` python
         def DFS_graph(graph, v0):
             vnum = graph.vertex_num()
             visited = [0]*vnum                  # visited 记录已访问顶点
@@ -464,7 +464,7 @@
 
     - 在元素有序的表上做二分法检索
 
-        ``` pyhton
+        ``` python
         def bisearch(lst, key):
             low, high = 0, len(lst)-1
             while low <= high:                  # 范围内还有元素
