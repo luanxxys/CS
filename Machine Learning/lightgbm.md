@@ -19,7 +19,7 @@
 
 测试安装结果
 
-    cd examples/python-guide
+    cd ../examples/python-guide
     python simple_example.py
 
 [reference](https://github.com/Microsoft/LightGBM/blob/master/docs/Installation-Guide.rst)
