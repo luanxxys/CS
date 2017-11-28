@@ -18,13 +18,17 @@
 
             重新登陆网络（学校无线网可用）即可。
 
-            > [hosts 文件来源](https://github.com/lennylxx/ipv6-hosts)
 
         * Unix/Linux 环境
 
             hosts 文件位置：`/etc/hosts`
 
             其它设置类似 windows 环境
+
+
+        > [hosts 文件来源](https://github.com/lennylxx/ipv6-hosts)
+        >
+        > [修改 hosts 文件的原理](https://www.zhihu.com/question/19782572)
 
 - 工具软件
 
