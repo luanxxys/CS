@@ -1,6 +1,6 @@
 # Data Mining
 
-- ### [前期准备](https://github.com/luanxxys/computer-science/blob/master/Ddata%20Mining/preparation.md)
+- ### [前期准备](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/preparation.md)
 
 - ### 流程
 
@@ -15,7 +15,7 @@
 
     + [知乎：特征工程到底是什么？](https://www.zhihu.com/question/29316149)
 
-- ### Competition platform
+- ### [Competition platform](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/competition%20platform.md)
 
 
 

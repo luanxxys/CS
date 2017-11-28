@@ -4,7 +4,7 @@
 
     + 实验室有境外服务器，或自己有 SS 账号
 
-        reference： https://git.io/vbfbl
+        [使用 SwitchyOmega 代理上网](https://github.com/luanxxys/software/blob/master/google-chrome/SwitchyOmega.md)
 
     + 更改 hosts（实验室有线网或不可用）
 
@@ -59,22 +59,23 @@
     + chrome extensions
 
             Google Translate
+        > [我常用的其它 chrome 扩展](https://github.com/luanxxys/software/tree/master/google-chrome)
 
 + Python 环境
 
-    使用 anaconda 管理 python 虚拟环境 [refence](https://git.io/vbfx7)
+    使用 anaconda 管理 python 虚拟环境 [refence](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/anaconda.md)
 
 + python 库
 
-    [常用 python 库](https://git.io/vbfxd)
+    [常用 python 库](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%20-%20Python%20%E5%BA%93.md)
 
-    [pandas](https://git.io/vbfxA)
+    [pandas](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/pandas.md)
 
 + 服务器操作
 
     对于一些吃硬件资源的程序，可能需要在服务器上跑
 
-    [初学 Linux 技巧](https://git.io/vbfpw)
+    [初学 Linux 技巧](https://github.com/luanxxys/linux/blob/master/memo/%E5%88%9D%E5%AD%A6%20Linux%20%E6%8A%80%E5%B7%A7.pdf)
 
 
 
