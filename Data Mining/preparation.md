@@ -71,6 +71,12 @@
 
     [pandas](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/pandas.md)
 
++ python modules
+
+    [XgBoost](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/XgBoost.md)
+
+    [LightGBM](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/LightGBM.md)
+
 + 服务器操作
 
     对于一些吃硬件资源的程序，可能需要在服务器上跑
