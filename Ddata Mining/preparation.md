@@ -26,7 +26,7 @@
 
             其它设置类似 windows 环境
 
-- 工具
+- 工具软件
 
     + github
 
@@ -42,19 +42,36 @@
 
             脑图软件
 
+    + RealVNC
+
+            远程桌面软件
+
+    + WinSCP
+
+            和服务器之间文件交互
+
+        > 本地主机是 Unix/Linux 环境下，使用 [SCP](https://github.com/luanxxys/linux/blob/master/memo/scp.md) 命令
+
     + chrome extensions
 
             Google Translate
 
-+ 编码环境
++ Python 环境
 
     使用 anaconda 管理 python 虚拟环境 [refence](https://git.io/vbfx7)
 
-+ 常用 python 库
++ python 库
 
     [常用 python 库](https://git.io/vbfxd)
 
     [pandas](https://git.io/vbfxA)
+
++ 服务器操作
+
+    对于一些吃硬件资源的程序，可能需要在服务器上跑
+
+    [初学 Linux 技巧](https://git.io/vbfpw)
+
 
 
 
