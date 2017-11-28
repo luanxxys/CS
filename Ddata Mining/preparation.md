@@ -10,9 +10,9 @@
 
         * Windows 环境
 
-            找到 'C:\Windows\System32\drivers\etc' 目录下的 'hosts' 文件，以文本方式打开。
+            找到 `C:\Windows\System32\drivers\etc` 目录下的 `hosts` 文件，以文本方式打开。
 
-            打开下面网址，复制粘贴其中全部内容到 'hosts' 文件中
+            打开下面网址，复制粘贴其中全部内容到 `hosts` 文件中
 
                 https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts
 
@@ -22,9 +22,9 @@
 
         * Unix/Linux 环境
 
-            hosts 文件位置：'/etc/hosts'
+            hosts 文件位置：`/etc/hosts`
 
-            其它设置类似 windows 环境。
+            其它设置类似 windows 环境
 
 - 工具
 
@@ -53,6 +53,7 @@
 + 常用 python 库
 
     [常用 python 库](https://git.io/vbfxd)
+
     [pandas](https://git.io/vbfxA)
 
 
