@@ -59,7 +59,7 @@
     + chrome extensions
 
             Google Translate
-        > [我常用的其它 chrome 扩展](https://github.com/luanxxys/software/tree/master/google-chrome)
+        > 我常用的其它 [chrome 扩展](https://github.com/luanxxys/software/tree/master/google-chrome)
 
 + Python 环境
 
