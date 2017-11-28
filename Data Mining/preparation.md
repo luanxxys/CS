@@ -63,7 +63,7 @@
 
 + Python 环境
 
-    使用 anaconda 管理 python 虚拟环境 [refence](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/anaconda.md)
+    [使用 anaconda 管理 python 虚拟环境](https://github.com/luanxxys/computer-science/blob/master/Data%20Mining/anaconda.md)
 
 + python 库
 
