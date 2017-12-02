@@ -2,7 +2,7 @@
 
 - ### Install
 
-        reference：https://docs.anaconda.com/anaconda/install/linux
+    reference：https://docs.anaconda.com/anaconda/install/linux
 
 - ### 管理 conda
 
