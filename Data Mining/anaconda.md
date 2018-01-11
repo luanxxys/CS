@@ -26,7 +26,7 @@
         conda creat -n snowflakes biopython
     > 给 Biopython 创建一个新的环境，位置在 /envs/snowflakes
 
-        conda activate snowflakes
+        source activate snowflakes
     > 激活这个环境
     >
     > 未指定 python 版本，则默认为安装 conda 时的版本
@@ -46,11 +46,11 @@
 
     切换到另一个环境(activate/deactivate)
 
-        conda activate snowflakes
+        source activate snowflakes
 
     如果要从你当前工作环境的路径切换到系统根目录时，键入
 
-        conda deactivate
+        source deactivate
 
     复制一个环境
 
@@ -75,7 +75,7 @@
 
         conda create -n pyhton2 python=2
 
-        conda activate pyhton2
+        source activate pyhton2
 
     确定环境添加成功
 
@@ -88,7 +88,7 @@
     注销该环境
     > 完成了在snowflakes环境中的工作室，注销掉该环境并转换你的路径到先前的状态
 
-        conda deactivate
+        source deactivate
 
 - ### 管理包
 
