@@ -128,7 +128,7 @@ CONs
 
 Kinds of GANs
 
-![](images/GANs.png)
+![](images/GANs.PNG)
 
 [GAN Timeline](https://github.com/dongb5/GAN-Timeline)
 
