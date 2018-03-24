@@ -20,7 +20,7 @@
 
 > R. Huang et al. 2017
 
-<img src="images/sky.png" width="73%" height="73%"/>
+<img src="images/sky.PNG" width="73%" height="73%"/>
 
 > Jun-Yan Zhu et al. 2016
 
