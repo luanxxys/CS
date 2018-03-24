@@ -1,3 +1,13 @@
+### Gist
+
+- What can GAN do ?
+- What is GAN ?
+- Theory & Algorithm
+- PROs and CONs
+- There are more that GAN can do ...
+- Future Research on GANs
+- GAN on Speech Processing
+
 # Generative Adversarial Networks
 
 ### What can GAN do ?
