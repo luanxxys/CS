@@ -1,6 +1,6 @@
 # Data Mining
 
-<img src="images/data_mining_abbr.PNG" width="65%" height="65%"/>
+<img src="images/data_mining_abbr.png" width="65%" height="65%"/>
 
 Further more
 
@@ -9,7 +9,7 @@ Further more
 
 ![steps](./images/steps.jpg)
 
-![pip](./images/data_pip.PNG)
+![pip](./images/data_pip.png)
 
 ### 阅读材料
 
