@@ -6,7 +6,7 @@
 
     决策树算法以树状结构表示数据分类的结果。每个决策点实现一个具有离散输出的测试函数，记为分支。
 
-    <img src="images/decision_tree.png" width="50%" height="50%" alt=" decision_tree " align=center />
+    <img src="images/decision_tree.PNG" width="50%" height="50%" alt=" decision_tree " align=center />
 
 - ## 决策树生成
 
@@ -42,11 +42,11 @@
 
             - 数据集为
 
-                <img src="images/sample.png" width="79%" height="79%" alt="sample" align=center />
+                <img src="images/sample.PNG" width="79%" height="79%" alt="sample" align=center />
 
             - 决策划分方式
 
-                <img src="images/devided.png" width="59%" height="59%" alt="devided" align=center />
+                <img src="images/devided.PNG" width="59%" height="59%" alt="devided" align=center />
 
             - 未指定天气状况情况下，根据历史数据，求熵
 
@@ -157,7 +157,7 @@
 
 - ## 随机森林
 
-    <img src="images/random_forest.png" width="50%" height="50%" alt=" random_forest " align=center />
+    <img src="images/random_forest.PNG" width="50%" height="50%" alt=" random_forest " align=center />
 
     Bootstraping：有放回采样
 
@@ -175,6 +175,6 @@
 
     + 参数及其含义
 
-        ![](images/parameter.png)
+        ![](images/parameter.PNG)
 
 ### [scikit-learn 决策树算法类库使用小结](https://www.cnblogs.com/pinard/p/6056319.html)
