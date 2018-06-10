@@ -9,6 +9,7 @@
 1. ### linear SVM target function
 
     <img src="images/svm.jpg" width="50%" height="50%" align=center />
+
     > hyperplane is <a href="https://www.codecogs.com/eqnedit.php?latex=W^{T}X^{'}&plus;b=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?W^{T}X^{'}&plus;b=0" title="W^{T}X^{'}+b=0" /></a>
 
     + #### 支持向量到分类直线的距离
@@ -24,7 +25,7 @@
 
             <img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;&&space;y_{i}=&plus;1,\text{&space;if&space;}&space;y(x_{i})>&space;0&space;\\&space;&&space;y_{i}=-1,\text{&space;if&space;}&space;y(x_{i})<&space;0&space;\end{cases}&space;\Rightarrow&space;y(i)*y(x_{i})>&space;0" title="\begin{cases} & y_{i}=+1,\text{ if } y(x_{i})> 0 \\ & y_{i}=-1,\text{ if } y(x_{i})< 0 \end{cases} \Rightarrow y(i)*y(x_{i})> 0" />
 
-            故 <img src="https://latex.codecogs.com/gif.latex?w·x&plus;b" title="w·x+b" /> 的符号与类标记 <img src="https://latex.codecogs.com/gif.latex?y" title="y" /> 的符号是否一致能够表示分类是否正确。所以可用量 <img src="https://latex.codecogs.com/gif.latex?y(w·x&plus;b)" title="y(w·x+b)" /> 来表示分类的正确性和确信度，这就是**函数间隔(functional margin)**的概念。函数间隔为
+            故 <img src="https://latex.codecogs.com/gif.latex?w·x&plus;b" title="w·x+b" /> 的符号与类标记 <img src="https://latex.codecogs.com/gif.latex?y" title="y" /> 的符号是否一致能够表示分类是否正确。所以可用量 <img src="https://latex.codecogs.com/gif.latex?y(w·x&plus;b)" title="y(w·x+b)" /> 来表示分类的正确性和确信度，这就是**函数间隔**(functional margin)的概念。函数间隔为
 
             <img src="https://latex.codecogs.com/gif.latex?\widehat{\gamma}=y_{i}(w·x_{i}&plus;b)" title="\widehat{\gamma}=y_{i}(w·x_{i}+b)" />
 
@@ -40,6 +41,8 @@
             > 样本类别设置为 {-1, +1}，使距离始终为正值
 
     + #### 下面围绕着求得一个间隔最大的分离超平面进行展开
+
+        ** _间隔与分类问题的结构风险有关，最大化间隔等于最小化结构风险，从而得到一个更好的分类器 !_ **
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{max}\text{&space;}\gamma" title="\underset{w,b}{max}\text{ }\gamma" />
 
@@ -97,7 +100,16 @@
 
     + #### 通过其对偶问题求解,以简化计算
 
-        > 原问题的解包含在对偶问题的解中，等价最优化
+        > 原问题的解包含在对偶问题的解中，等价最优化。转换为对偶问题能得到更高效的解法，也方便了核函数的引入。
+
+        为什么支持向量机要用拉格朗日对偶算法来解最大化间隔问题？
+
+            1) 不等式约束一直是优化问题中的难题，求解对偶问题可以将支持向量机原问题约束中的不等式约束转化为等式约束；
+            2) 支持向量机中用到了高维映射，但是映射函数的具体形式几乎完全不可确定，而求解对偶问题之后，可以使用核函数来解决这个问题。
+
+        > 用拉格朗日对偶并没有改变最优解，而是改变了算法复杂度
+
+        在当前情境下
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{min}\text{&space;}\underset{\lambda&space;}{max}L(w,b,\lambda&space;)&space;\rightarrow&space;\underset{\lambda&space;}{max}\text{&space;}\underset{w,b}{min}L(w,b,\lambda&space;)" title="\underset{w,b}{min}\text{ }\underset{\lambda }{max}L(w,b,\lambda ) \rightarrow \underset{\lambda }{max}\text{ }\underset{w,b}{min}L(w,b,\lambda )" />
 
@@ -177,8 +189,12 @@ prediction = svc.predict(verify_set)
 - g gamma : set gamma in kernel function(default 1/num_features)
 - c cost : set the parameter C of C-SVC,epsilon-SVR, and nu-SVR (default 1)
 
-        C是惩罚系数，即对误差的宽容度。c越高，说明越不能容忍出现误差,容易过拟合。C越小，容易欠拟合。C过大或过小，泛化能力变差
+        C是惩罚系数，即对误差的宽容度。
+        c越高，说明越不能容忍出现误差,容易过拟合。C越小，容易欠拟合。
+        C过大或过小，泛化能力变差
 
-        gamma是选择RBF函数作为kernel后，该函数自带的一个参数。隐含地决定了数据映射到新的特征空间后的分布，gamma越大，支持向量越少，gamma值越小，支持向量越多。支持向量的个数影响训练与预测的速度。
+        gamma是选择RBF函数作为kernel后，该函数自带的一个参数。
+        隐含地决定了数据映射到新的特征空间后的分布，gamma越大，支持向量越少，gamma值越小，支持向量越多。
+        支持向量的个数影响训练与预测的速度。
 
 之前看《统计学习方法》时候留的粗略的记录,可以找到 [SVM 部分](https://github.com/luanxxys/computer_science/blob/master/machine_learning/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/readme.md)看看.
