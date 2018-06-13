@@ -208,3 +208,5 @@
 [reference](https://github.com/jikexueyuanwiki/tensorflow-zh/)
 
 [Learn TensorBoard](tensorboard/readme.md)
+
+[CUDA 指定 GPU 运行 TensorFlow](CUDA指定GPU运行TensorFlow.md)
