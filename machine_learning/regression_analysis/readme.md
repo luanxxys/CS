@@ -12,7 +12,7 @@
 
         <img src="https://latex.codecogs.com/gif.latex?p(\varepsilon&space;^{(i)})=\frac{1}{\sqrt{2\pi&space;}\sigma&space;}exp(-\frac{(\varepsilon&space;^{(i)})&space;^{2})}{2\sigma&space;^{2}})" title="p(\varepsilon ^{(i)})=\frac{1}{\sqrt{2\pi }\sigma }exp(-\frac{(\varepsilon ^{(i)}) ^{2})}{2\sigma ^{2}})" />
 
-        将优化问题转化成：找到参数<img src="https://latex.codecogs.com/gif.latex?\theta" title="\theta" />,求得最小的误差<img src="https://latex.codecogs.com/gif.latex?\varepsilon }" title="\varepsilon }" />,使预测值和真实值相等的概率最大
+        将优化问题转化成：找到参数<img src="https://latex.codecogs.com/gif.latex?\theta" title="\theta" />,求得最小的误差<img src="https://latex.codecogs.com/gif.latex?\varepsilon" title="\varepsilon" />,使预测值和真实值相等的概率最大
 
         <img src="https://latex.codecogs.com/gif.latex?p(y&space;^{(i)}|x&space;^{(i)};\theta&space;)=\frac{1}{\sqrt{2\pi&space;}\sigma&space;}exp(-\frac{(y^{(i)}-\theta&space;^{T}x^{(i)})&space;^{2})}{2\sigma&space;^{2}})" title="p(y ^{(i)}|x ^{(i)};\theta )=\frac{1}{\sqrt{2\pi }\sigma }exp(-\frac{(y^{(i)}-\theta ^{T}x^{(i)}) ^{2})}{2\sigma ^{2}})" />
 
