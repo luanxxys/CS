@@ -98,6 +98,15 @@
 
     <img src="https://latex.codecogs.com/gif.latex?\theta&space;_{0}:=\theta&space;_{0}-\alpha&space;*\frac{\partial&space;J(\theta&space;_{0},\theta&space;_{1})}{\theta&space;_{1}}" title="\theta _{0}:=\theta _{0}-\alpha *\frac{\partial J(\theta _{0},\theta _{1})}{\theta _{1}}" />
 
+- ## 区别
+
+    |线性回归|逻辑回归
+    ---|---|---
+    目的|预测|分类
+    y|未知|{0,1}
+    函数|拟合函数|预测函数
+    参数计算方式|最小二乘|最大似然估计
+
 ### 插曲
 
 线性回归中假设的,两个模型之间符合的高斯分布的误差,最开始想当然认为了求得这个最小误差后,原始数据集减之就能求得预测模型。

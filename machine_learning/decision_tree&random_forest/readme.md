@@ -178,3 +178,5 @@
         ![](images/parameter.PNG)
 
 ### [scikit-learn 决策树算法类库使用小结](https://www.cnblogs.com/pinard/p/6056319.html)
+
+[从零开始用Python构造决策树（附公式、代码）](从零开始用Python构造决策树（附公式、代码）.pdf)
