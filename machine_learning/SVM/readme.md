@@ -46,7 +46,7 @@
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{max}\text{&space;}\gamma" title="\underset{w,b}{max}\text{ }\gamma" />
 
-    且
+        且
 
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}y_{i}(\frac{w}{\left&space;\|&space;w&space;\right&space;\|}·x_{i}&plus;\frac{b}{\left&space;\|&space;w&space;\right&space;\|})\geq&space;\gamma&space;,i=1,2,...,N" title="\text{s.t. }y_{i}(\frac{w}{\left \| w \right \|}·x_{i}+\frac{b}{\left \| w \right \|})\geq \gamma ,i=1,2,...,N" />
 
@@ -70,7 +70,7 @@
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{min}\text{&space;}\frac{1}{2}\left&space;\|&space;w&space;\right&space;\|^{2}" title="\underset{w,b}{min}\text{ }\frac{1}{2}\left \| w \right \|^{2}" />
 
-    且
+        且
 
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}y_{i}(w·x_{i}&plus;b)-1\geq&space;0&space;,i=1,2,...,N" title="\text{s.t. }y_{i}(w·x_{i}+b)-1\geq 0 ,i=1,2,...,N" />
 
@@ -94,7 +94,7 @@
 
         <img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;w}=0\Rightarrow&space;w=\sum_{i=1}^{n}\lambda&space;_{i}y_{i}\Phi&space;(x_{n})" title="\frac{\partial L}{\partial w}=0\Rightarrow w=\sum_{i=1}^{n}\lambda _{i}y_{i}\Phi (x_{n})" />
 
-    且
+        且
 
         <img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;b}=0\Rightarrow&space;0=\sum_{i=1}^{n}\lambda&space;_{i}y_{i}" title="\frac{\partial L}{\partial b}=0\Rightarrow 0=\sum_{i=1}^{n}\lambda _{i}y_{i}" />
 
@@ -125,7 +125,7 @@
 
         <img src="https://latex.codecogs.com/gif.latex?\text{arg&space;}\underset{\lambda&space;}{max}L(w,b,\lambda&space;)=\sum_{i=1}^{n}\lambda&space;_{i}-\frac{1}{2}\sum_{i=1}^{n}\lambda&space;_{i}\lambda&space;_{j}y_{j}\Phi&space;^{T}(x_{i})\Phi&space;(x_{i})" title="\text{arg }\underset{\lambda }{max}L(w,b,\lambda )=\sum_{i=1}^{n}\lambda _{i}-\frac{1}{2}\sum_{i=1}^{n}\lambda _{i}\lambda _{j}y_{j}\Phi ^{T}(x_{i})\Phi (x_{i})" />
 
-    且
+        且
 
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}&space;\lambda&space;_{i}\geq&space;0,\forall&space;i;\sum_{i=1}^{n}\lambda&space;_{i}y&space;_{i}=0" title="\text{s.t. } \lambda _{i}\geq 0,\forall i;\sum_{i=1}^{n}\lambda _{i}y _{i}=0" />
 
