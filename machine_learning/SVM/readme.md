@@ -42,9 +42,10 @@
 
     + #### 下面围绕着求得一个间隔最大的分离超平面进行展开
 
-        ** _间隔与分类问题的结构风险有关，最大化间隔等于最小化结构风险，从而得到一个更好的分类器 !_ **
+        **_间隔与分类问题的结构风险有关，最大化间隔等于最小化结构风险，从而得到一个更好的分类器 !_**
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{max}\text{&space;}\gamma" title="\underset{w,b}{max}\text{ }\gamma" />
+
 
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}y_{i}(\frac{w}{\left&space;\|&space;w&space;\right&space;\|}·x_{i}&plus;\frac{b}{\left&space;\|&space;w&space;\right&space;\|})\geq&space;\gamma&space;,i=1,2,...,N" title="\text{s.t. }y_{i}(\frac{w}{\left \| w \right \|}·x_{i}+\frac{b}{\left \| w \right \|})\geq \gamma ,i=1,2,...,N" />
 
@@ -53,6 +54,7 @@
     - #### 化为函数间隔形式
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{max}\text{&space;}\frac{\widehat{\gamma&space;}}{\left&space;\|&space;w&space;\right&space;\|}" title="\underset{w,b}{max}\text{ }\frac{\widehat{\gamma }}{\left \| w \right \|}" />
+
 
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}y_{i}(w·x_{i}&plus;b)\geq&space;\widehat{\gamma}&space;,i=1,2,...,N" title="\text{s.t. }y_{i}(w·x_{i}+b)\geq \widehat{\gamma} ,i=1,2,...,N" />
 
@@ -67,6 +69,7 @@
     + #### 最终目标函数登场
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{min}\text{&space;}\frac{1}{2}\left&space;\|&space;w&space;\right&space;\|^{2}" title="\underset{w,b}{min}\text{ }\frac{1}{2}\left \| w \right \|^{2}" />
+
 
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}y_{i}(w·x_{i}&plus;b)-1\geq&space;0&space;,i=1,2,...,N" title="\text{s.t. }y_{i}(w·x_{i}+b)-1\geq 0 ,i=1,2,...,N" />
 
