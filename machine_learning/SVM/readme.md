@@ -56,6 +56,8 @@
 
         <img src="https://latex.codecogs.com/gif.latex?\underset{w,b}{max}\text{&space;}\frac{\widehat{\gamma&space;}}{\left&space;\|&space;w&space;\right&space;\|}" title="\underset{w,b}{max}\text{ }\frac{\widehat{\gamma }}{\left \| w \right \|}" />
 
+        且
+
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}y_{i}(w·x_{i}&plus;b)\geq&space;\widehat{\gamma}&space;,i=1,2,...,N" title="\text{s.t. }y_{i}(w·x_{i}+b)\geq \widehat{\gamma} ,i=1,2,...,N" />
 
         函数间隔 <img src="https://latex.codecogs.com/gif.latex?\widehat{\gamma}" title="\widehat{\gamma}" /> 取值不影响最优化问题的解，可令 <img src="https://latex.codecogs.com/gif.latex?\widehat{\gamma}=1" title="\widehat{\gamma}=1" />
@@ -128,6 +130,8 @@
         且
 
         <img src="https://latex.codecogs.com/gif.latex?\text{s.t.&space;}&space;\lambda&space;_{i}\geq&space;0,\forall&space;i;\sum_{i=1}^{n}\lambda&space;_{i}y&space;_{i}=0" title="\text{s.t. } \lambda _{i}\geq 0,\forall i;\sum_{i=1}^{n}\lambda _{i}y _{i}=0" />
+
+        接下来的计算使用 SMO 算法, 将问题就变成了类似于二次方程求最大值的问题，从而就能求出解析解. 具体思想见 [SMO算法](SMO.pdf).
 
     + #### 最终模型
 
