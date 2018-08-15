@@ -1,4 +1,8 @@
-# Python 库
+# Python module
+
+### [Numpy](numpy.md)
+
+### [Pandas](pandas.md)
 
 ### Scipy
 
@@ -8,7 +12,7 @@ SciPy 库的建立就是和 NumPy 数组一起工作，并提供许多对用户�
 
 SciPy 提供模块用于优化、线性代数、积分以及其它数据科学中的通用任务。
 
-### Matplotlib
+### [Matplotlib](../visualization/Matplotlib.md)
 
 Matlplotlib 是 Python 的一个可视化模块。它让你方便地制作线条图、饼图、柱状图以及其它专业图形。
 
@@ -26,9 +30,13 @@ Scikit-learn 有助于你迅速地在你的数据集上实现流行的算法。
 
 看一下 Scikit-learn 中提供的算法列表，你就会马上意识到它包含了许多用于标准机器学习任务的工具，如：聚类、分类和回归等。
 
+[实践python_module.ipynb](python_module.ipynb)
+
 #### 部分功能介绍
 
 ##### 管道（Pipeline）
+
+![数据科学管道](../images/data_pip.png)
 
 这可以用来将多个估计量链化合一。因为在处理数据时，通常有着一系列固定的步骤，比如特征选择、归一化和分类，此时这个方法将非常有用。
 

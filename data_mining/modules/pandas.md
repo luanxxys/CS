@@ -4,6 +4,10 @@
 
 Pandas 包含高级数据结构，以及和让数据分析变得快速、简单的工具。
 
+以 DataFrame 为核心, pandas 将文件读成此种格式,以便进行后续的操作。
+
+> series: DataFrame 的子集
+
 它建立在 NumPy 之上，使以 NumPy 为中心的应用变得简单。
 
 - 带有坐标轴的数据结构，支持自动或明确的数据对齐。这能防止由于数据没有对齐，以及处理不同来源的、采用不同索引的数据而产生的常见错误。
@@ -16,7 +20,7 @@ Pandas 是进行数据清洗 / 整理（data munging）的最好工具。
 
 ***
 
-可以完成的任务
+## 可以完成的任务
 
 - 读 / 写不同格式的数据
 
@@ -49,6 +53,23 @@ Pandas 是进行数据清洗 / 整理（data munging）的最好工具。
 
 Pandas 通常是被用在数据采集和存储以及数据建模和预测中间的工具，作用是数据挖掘和清理。
 
-![数据科学管道](./images/data_pip.png)
+## 快捷操作
+
+- ### 文件
+
+    ```python
+    import pandas as pd
+    # 读取以 , 分割的文件(包括 csv 文件)
+    f = pd.read_csv("file.csv")
+    f.head()/.tail(3)
+    # 打印 列名字
+    print(f.columns)
+    # 取第一二行数据(各个属性都取出来)
+    f.loc[0,1]
+    # 取 3-5 样本数据
+    f.loc[3:5]
+    # 取某列
+    f["comumns_name"]
+    ```
 
 [Pandas 官方文档](https://pandas.pydata.org/pandas-docs/stable/)

@@ -195,3 +195,7 @@ NumPy 不提供高级数据分析功能，但有了对 NumPy 数组和面向数�
         mat.sum() #Returns the sum of all the values in mat
         mat.sum(axis=0) #Returns the sum of all the columns in
         mat mat.sum(axis=1) #Returns the sum of all the rows in mat
+
+### reference
+
+- [numpy_shortcuts](numpy_shortcuts.md)
