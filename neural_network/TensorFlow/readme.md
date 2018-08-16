@@ -205,8 +205,10 @@
 
                 给 `tf.initialize_all_variables()` 函数传入一组变量进行初始化. 详情请见[Variables Documentation](https://github.com/jikexueyuanwiki/tensorflow-zh/blob/master/api_docs/python/state_ops.md)，包括检查变量是否被初始化.
 
-[reference](https://github.com/jikexueyuanwiki/tensorflow-zh/)
+### reference
 
-[Learn TensorBoard](tensorboard/readme.md)
+- [TensorFlow 官方文档中文版](https://github.com/jikexueyuanwiki/tensorflow-zh/)
 
-[CUDA 指定 GPU 运行 TensorFlow](CUDA指定GPU运行TensorFlow.md)
+- [Learn TensorBoard](tensorboard/readme.md)
+
+- [CUDA 指定 GPU 运行 TensorFlow](CUDA指定GPU运行TensorFlow.md)

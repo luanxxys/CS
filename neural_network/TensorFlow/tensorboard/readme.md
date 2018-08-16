@@ -74,8 +74,10 @@ TensorBoard 通过读取 TensorFlow 的事件文件来运行. TensorFlow 的事�
 
     然后你可以执行合并命令，它会依据特点步骤将所有数据生成一个序列化的Summary protobuf 对象. 最后，为了将汇总数据写入磁盘，需要将汇总的 protobuf 对象传递给 `tf.summary.FileWriter`.
 
-[TensorBoard: 可视化学习](http://wiki.jikexueyuan.com/project/tensorflow-zh/how_tos/summaries_and_tensorboard.html)
+### reference
 
-[TensorBoard: 图表可视化](http://wiki.jikexueyuan.com/project/tensorflow-zh/how_tos/graph_viz.html)
+- [TensorBoard: 可视化学习](http://wiki.jikexueyuan.com/project/tensorflow-zh/how_tos/summaries_and_tensorboard.html)
 
-[Tensorboard 的初步使用](https://blog.csdn.net/sinat_33761963/article/details/62433234)
+- [TensorBoard: 图表可视化](http://wiki.jikexueyuan.com/project/tensorflow-zh/how_tos/graph_viz.html)
+
+- [Tensorboard 的初步使用](https://blog.csdn.net/sinat_33761963/article/details/62433234)

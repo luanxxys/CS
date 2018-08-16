@@ -106,3 +106,4 @@ TDNN 被 Hinton 组于 1989 年提出用于解决语音识别问题，最初专�
 
     + [TDNN 时延神经网络](https://blog.csdn.net/richard2357/article/details/16896837)
     + [时延神经网络 (TDNN) 原理及其 TensorFlow 实现](http://www.sohu.com/a/141935381_723464)
+    + [Phoneme Recognition Using Time-Delay Neural Networks](Phoneme_Recognition_Using_Time-Delay_Neural_Networks.pdf)
