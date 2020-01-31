@@ -50,8 +50,8 @@
 
         两种方式
 
-            1. sess = tf.Session(); sess.close()
-            2. with tf.Session() as sess:
+        1. sess = tf.Session(); sess.close()
+        2. with tf.Session() as sess:
 
         ##### 使用 GPU 进行分布式计算
 
@@ -211,4 +211,4 @@
 
 - [Learn TensorBoard](tensorboard/readme.md)
 
-- [CUDA 指定 GPU 运行 TensorFlow](CUDA指定GPU运行TensorFlow.md)
+- [CUDA 指定 GPU 运行 TensorFlow](tensorflow_GPU.md)

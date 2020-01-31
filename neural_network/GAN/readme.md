@@ -156,14 +156,9 @@ Single Image Super-Resolution
 
 ### GAN on Speech Processing
 
-[Robust Speech Recognition Using Generative Adversarial Networks](https://arxiv.org/abs/1711.01567)
-
-[SEGAN: Speech Enhancement Generative Adversarial Network](https://arxiv.org/pdf/1703.09452.pdf)
-
+- [Robust Speech Recognition Using Generative Adversarial Networks](https://arxiv.org/abs/1711.01567)
+- [SEGAN: Speech Enhancement Generative Adversarial Network](https://arxiv.org/pdf/1703.09452.pdf)
 - [Exploring Speech Enhancement with Generative Adversarial Networks for Robust Speech Recognition](https://arxiv.org/abs/1711.05747)
-
 - [Conditional Generative Adversarial Networks for Speech Enhancement and Noise-Robust Speaker Verification](http://kom.aau.dk/~zt/doc/Michelsanti-Tan-cGAN-Interspeech2017.pdf)
-
 - [Statistical Parametric Speech Synthesis Using Generative Adversarial Networks Under A Multi-task Learning Framework](https://arxiv.org/abs/1707.01670)
-
 - [Statistical Parametric Speech Synthesis Incorporating Generative Adversarial Networks](https://arxiv.org/abs/1709.08041)

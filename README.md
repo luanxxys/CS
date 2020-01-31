@@ -10,4 +10,4 @@
 - ### [数据挖掘 data mining](data_mining/readme.md)
 - ### [自然语言处理 NLP](NLP/readme.md)
 - ### [数据结构与算法 data structure and algorithm](data_structure_and_algorithm/readme.md)
-- ### [计算机网络相关知识 computer networks](computer_networks/readme.md)
+- ### [计算机网络相关知识 computer networks](computer_networks)
